@@ -47,7 +47,8 @@
     "lint": "rc-tools run lint",
     "test": "jest",
     "coverage": "jest --coverage",
-    "postinstall": "npm install --only=dev && npm run compile"
+    "preinstall": "npm install rc-tools",
+    "postinstall": "npm run compile"
   },
   "jest": {
     "setupFiles": [
